@@ -35,6 +35,6 @@ jobs:
         run: sam build
 
       - name: SAM deploy
-        run: sam deploy -no-confirm-changeset -no-fail-on-empty-changeset
+        run: sam deploy
 
 
