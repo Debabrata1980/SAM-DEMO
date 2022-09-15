@@ -32,9 +32,9 @@ jobs:
           aws-region: 'us-west-2'
 
       - name: SAM build and deploy
-        run: sam build
+        uses: Debabrata1980/sam-build@master
 
       - name: SAM deploy
-        run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
+        uses: Debabrata1980/sam-deploy@master
 
 
