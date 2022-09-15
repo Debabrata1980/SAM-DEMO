@@ -31,9 +31,8 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
           aws-region: 'us-west-2'
 
-    - name: SAM build and deploy
-      run: sam build
- #     working-directory: 
-           sam deploy -no-confirm-changeset -no-fail-on-empty-changeset
+      - name: SAM build and deploy
+        run: sam build
+             sam deploy -no-confirm-changeset -no-fail-on-empty-changeset
 
 
