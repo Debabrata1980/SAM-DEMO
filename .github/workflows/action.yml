@@ -33,6 +33,9 @@ jobs:
 
       - name: SAM validate
         uses: Debabrata1980/sam-validate@master
+        with:
+          template: template.yaml
+          region: us-east-1
 
       - name: SAM build and deploy
         uses: Debabrata1980/sam-deploy@master
