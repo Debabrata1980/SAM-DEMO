@@ -31,10 +31,10 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
           aws-region: 'us-west-2'
 
-      - name: SAM build and deploy
-        uses: Debabrata1980/sam-build@master
+      - name: SAM validate
+        uses: Debabrata1980/sam-validate@master
 
-      - name: SAM deploy
+      - name: SAM build and deploy
         uses: Debabrata1980/sam-deploy@master
 
 
